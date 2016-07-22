@@ -20,6 +20,9 @@ $(document).ready(function() {
                     aImg.attr('src', e.target.result);
                 };
             })(img);
+            console.log('Загружен: ' + file.name);
+            console.log('Размер изображения: ' + file.size + 'kb');
+            console.log(file)
             reader.readAsDataURL(file);
         });
     }
