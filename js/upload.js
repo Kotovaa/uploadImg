@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var fileInput = $('#file-field');    
+    var fileInput = $('#file-field');
     var imgList = $('ul#img-list');
-     var dropBox = $('#img-container');
+    var dropBox = $(document);
     function displayFiles(files) {
         var imageType = /image.*/;
         var num = 0;
@@ -26,6 +26,22 @@ $(document).ready(function() {
     fileInput.bind({
         change: function() {
             displayFiles(this.files);
+        }
+    });
+    dropBox.bind({
+        dragenter: function() {
+            return false;
+        },
+        dragover: function() {
+            return false;
+        },
+        dragleave: function() {
+            return false;
+        },
+        drop: function(e) {
+            var dt = e.originalEvent.dataTransfer;
+            displayFiles(dt.files);
+            return false;
         }
     });
     if(window.FileReader == null) {
