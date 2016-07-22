@@ -21,7 +21,9 @@ Plugin for images uploading
 
 #### and plugin
 ```<script type="text/javascript" src="js/upload.js"></script>```
-**or**
+
+or
+
 ```<script type="text/javascript" src="js/uploadImg.min.js"></script>```
 
 
