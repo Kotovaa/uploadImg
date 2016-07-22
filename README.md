@@ -18,8 +18,12 @@ Plugin for images uploading
 
 #### jquery
 ```<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>```
+
 #### and plugin
 ```<script type="text/javascript" src="js/upload.js"></script>```
+**or**
+```<script type="text/javascript" src="js/uploadImg.min.js"></script>```
+
 
 
 ## How does the plugin
